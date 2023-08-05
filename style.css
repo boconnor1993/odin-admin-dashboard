@@ -17,7 +17,6 @@ html, body {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 ul li {
@@ -35,7 +34,8 @@ ul li {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: auto 5fr;
+    grid-template-rows: auto 1fr;
 }
 
 /* Sidebar */
@@ -48,6 +48,10 @@ ul li {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+}
+
+.sidebar a {
+    color: white;
 }
 
 .sb-1, .sb-2, .sb-logo {
@@ -86,6 +90,56 @@ ul li {
 /* Nav */
 nav {
     background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: black;
+}
+
+.nav-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-top-row form {
+    display: flex;
+}
+
+.nav-top-row input {
+    height: 25px;
+    margin-left: 10px;
+    width: 50vw;  
+    max-width: 600px;  
+    min-width: 200px;  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.nav-top-row-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-top-row img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-top-profile a {
+    font-weight: bold;
 }
 
 /* Article */
