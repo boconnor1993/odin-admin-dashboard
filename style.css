@@ -1,0 +1,94 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* BX */
+.bx {
+    font-size: 1.7rem;
+}
+
+/* Container */
+.container {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--primary);
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.sb-1, .sb-2, .sb-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sb-logo {
+    margin-bottom: 25px;
+}
+
+.sb-1, .sb-2 {
+    padding-bottom: 5px;
+}
+
+.sb-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.sb-1 span {
+    align-self: center;
+    font-weight: 400;
+}
+
+.sidebar i {
+    padding-right: 1rem;
+}
+
+.sb-2-container {
+    margin-top: auto;
+}
+
+/* Nav */
+nav {
+    background-color: white;
+}
+
+/* Article */
+article {
+    display: grid;
+}
