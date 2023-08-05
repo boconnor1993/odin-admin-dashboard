@@ -131,8 +131,8 @@ nav a {
 }
 
 .nav-top-row img {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
@@ -140,6 +140,63 @@ nav a {
 
 .nav-top-profile a {
     font-weight: bold;
+}
+
+.nav-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bottom-row-left {
+    margin-top: 20px;
+    display: flex;
+}
+
+.nav-bottom-row-left img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-welcome {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greeting {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-name span {
+    color: var(--primary);
+}
+
+.nav-bottom-row-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-bottom-row-right button {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--primary);
+    font-weight: bold;
+    color: white;
 }
 
 /* Article */
