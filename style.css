@@ -209,4 +209,54 @@ nav a {
 /* Article */
 article {
     display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+}
+
+.project-cards {
+    margin-right: 1rem;
+}
+
+.project-cards-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+    font-size: 14px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 7px solid orange;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.article-title, .project-heading {
+    font-weight: 550;
+    padding-bottom: 7px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.project-icons i{
+    color: var(--primary);
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.announcements-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.accouncement-item {
+    border-bottom: 1px solid lightgray;
 }
