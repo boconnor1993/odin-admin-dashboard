@@ -253,10 +253,50 @@ article {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .accouncement-item {
     border-bottom: 1px solid lightgray;
+    padding: 1rem 0;
+    font-size: 0.75rem;
+}
+
+.accouncement-item:last-child {
+    border-bottom: 0;
+}
+
+.announcement-title {
+    font-weight: 600;
+    padding-bottom: 0.25rem;
+}
+
+.trending-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.5rem;
+}
+
+.trending-item {
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    display: flex;
+}
+
+.trending-item img {
+    height: 1.875rem; /* 30px / 16 */
+    width: 1.875rem; /* 30px / 16 */
+    border-radius: 50%;
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.trending-project {
+    color: gray;
 }
